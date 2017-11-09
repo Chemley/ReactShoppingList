@@ -5,8 +5,8 @@ class ItemForm extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            item: "Washers ",
-            cost: 6
+            item: " ",
+            cost: " "
         }
     }
 
@@ -15,9 +15,8 @@ class ItemForm extends Component {
             <form className="ItemForm" onSubmit={this.handleSubmit.bind(this)}>
                 <h2>Add a Item</h2>
                     <label>Item</label>
-                    <label>Cost</label>
                     <input type="item" value={this.state.item} onChange={this.handleItemChange.bind(this)}/>
-                    <label>Email</label>
+                    <label>Cost</label>
                     <input type="cost" value={this.state.cost} onChange={this.handleCostChange.bind(this)}/>
                 <p className="ItemForm__button-bar">
                     <button type="submit">Add</button>

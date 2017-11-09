@@ -28,7 +28,7 @@ class App extends Component {
         // I've chosen to use an arrow (=>) function because in many cases this
         // will keep us out of trouble, although here it makes no difference.
         const listItems = this.state.listItems.map((listItem, index) => (
-            <ShoppingList key={listItem.item} listItems={listItem} onDelete={() => this.removeItem(index)}/>
+            <ShoppingList key={listItem.item} listItem={listItem} onDelete={() => this.removeItem(index)}/>
         ));
 var total =  0
 this.state.listItems.map((item) =>
